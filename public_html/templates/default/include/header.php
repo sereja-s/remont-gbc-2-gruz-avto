@@ -50,7 +50,7 @@
 							<div class="menu__logo"><img src="<?= PATH . TEMPLATE ?>assets/img/Лого-траксервис-светлый с фоном -мин.jpg" alt="Logo"></div>
 							<ul class="menu__list">
 								<li class="menu__item"><a href="" class="menu__link">Ремонт ГБЦ</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Ремонт грузовых авто, прицепов, полуприцепов</a></li>
+								<li class="menu__item"><a href="<?= $this->alias('remontgruzauto') ?>" class="menu__link">Ремонт грузовых авто, прицепов, полуприцепов</a></li>
 								<!-- <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
 								<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li> -->
 								<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>

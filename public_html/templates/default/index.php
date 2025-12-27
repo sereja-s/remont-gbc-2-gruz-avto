@@ -1,6 +1,6 @@
 <section class="hero">
 	<div class="hero__container">
-		<h1 class="hero__title">Диагностика и ремонт головки блока цилиндров (ГБЦ) в Донецке</h1>
+		<h1 class="hero__title">Диагностика и ремонт головки блока цилиндров (ГБЦ) в Донецке ДНР</h1>
 		<div class="hero__subtitle">
 			Профессиональный ремонт и восстановление ГБЦ ДВС. Высококачественные работы с использованием современного оборудования. Гарантия на все виды ремонта!
 		</div>
@@ -30,10 +30,11 @@
 				<div class="benefits-item__text">
 					<p>Наша мастерская выполняет комплексный ремонт и обслуживание грузовых автомобилей, прицепов и полуприцепов в г. Донецке. Мы обслуживаем технику европейских производителей таких как: DAF, Renault, VOLVO, Schmitz, KRone</p>
 				</div>
-				<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Наши услуги</span></button>
-				<div class="benefits-item__icon">
 
-				</div>
+				<a href="<?= $this->alias('remontgruzauto') ?>" class="benefits-item__button button button--shadow"><span style="top: 12px;">Наши услуги</span></a>
+
+
+
 			</article>
 		</div>
 	</div>
@@ -46,63 +47,6 @@
 
 		<?= $this->pricetable ?>
 
-		<!-- <div class="category__body">
-			<article class="category__item category-item">
-				<div class="category-item__image">
-					<picture>
-						<source srcset="img/category/01.webp" type="image/webp"><img src="img/category/01.jpg" alt="Image">
-					</picture>
-				</div>
-				<div class="category-item__content">
-					<h4 class="category-item__title">Футболки</h4>
-					<div class="category-item__price">От 180 руб.</div>
-					<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
-				</div>
-			</article>
-			<article class="category__item category-item">
-				<div class="category-item__image">
-					<picture>
-						<source srcset="img/category/02.webp" type="image/webp"><img src="img/category/02.jpg" alt="Image">
-					</picture>
-				</div>
-				<div class="category-item__content">
-					<h4 class="category-item__title">Худи</h4>
-					<div class="category-item__price">От 500 руб.</div>
-					<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
-				</div>
-			</article>
-			<article class="category__item category-item">
-				<div class="category-item__image">
-					<picture>
-						<source srcset="img/category/03.webp" type="image/webp"><img src="img/category/03.jpg" alt="Image">
-					</picture>
-				</div>
-				<div class="category-item__content">
-					<h4 class="category-item__title">Свитшот</h4>
-					<div class="category-item__price">От 380 руб.</div>
-					<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
-				</div>
-			</article>
-			<article class="category__item category-item">
-				<div class="category-item__image">
-					<picture>
-						<source srcset="img/category/03.webp" type="image/webp"><img src="img/category/03.jpg" alt="Image">
-					</picture>
-				</div>
-				<div class="category-item__content">
-					<h4 class="category-item__title">Свитшот</h4>
-					<div class="category-item__price">От 380 руб.</div>
-					<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
-				</div>
-			</article>
-		</div>
-		<div class="category__bottom">
-			<div class="category__label">Не нашли своей позиции? Свяжитесь с нами и мы уточним, можем ли пошить
-				нужные вам изделия</div>
-			<button data-popup=".popup-call" class="category__button button button--shadow"><span>Связаться с
-					нами</span></button>
-			<a href="#" class="category__link">Что мы не шьем?</a>
-		</div> -->
 	</div>
 </section>
 

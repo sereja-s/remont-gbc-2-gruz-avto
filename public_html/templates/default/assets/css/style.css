@@ -389,7 +389,7 @@ body::after {
   width: 100%;
   cursor: default;
   text-align: left;
-  padding: 27px 50px 27px 0;
+  padding: 15px 50px 15px 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 135%;
@@ -533,7 +533,7 @@ body::after {
   display: inline-block;
   font-size: 24px;
   font-weight: 500;
-  line-height: 130%;
+  line-height: 100%;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
@@ -2037,7 +2037,7 @@ body::after {
 }
 
 .question {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 70px;
 }
 
