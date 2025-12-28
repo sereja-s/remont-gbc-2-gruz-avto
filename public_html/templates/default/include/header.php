@@ -58,12 +58,16 @@
 							<div class="menu__actions menu-actions">
 								<a href="tel:88007777550" class="menu-actions__item menu-actions__phone">
 									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/phone.svg" alt="Phone"></div>
-									<div class="menu-actions__text">+7(949)334-91-01</div>
+									<div class="menu-actions__text">+7(949)327-32-02 - Автосервис</div>
 								</a>
-								<a href="mailto:mail@agifta.ru" class="menu-actions__item menu-actions__email">
+								<a href="tel:88007777550" class="menu-actions__item menu-actions__phone">
+									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/phone.svg" alt="Phone"></div>
+									<div class="menu-actions__text">+7(949)334-91-01 - ГБЦ</div>
+								</a>
+								<!-- <a href="mailto:mail@agifta.ru" class="meu-actions__item menu-actions__email">
 									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/mail.svg" alt="Email"></div>
 									<div class="menu-actions__text">Ignatenko_k_a@mail.ru</div>
-								</a>
+								</a> -->
 								<a href="#" class="menu-actions__item menu-actions__telegram">
 									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/telegram.svg" alt="Telegram"></div>
 								</a>

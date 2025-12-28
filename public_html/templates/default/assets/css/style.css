@@ -668,9 +668,9 @@ body::after {
 }
 
 .menu-actions__phone .menu-actions__text {
-  white-space: nowrap;
+ /*  white-space: nowrap; */
   font-size: 22px;
-  line-height: 100%;
+  line-height: 115%;
   font-weight: 500;
 }
 
@@ -3043,7 +3043,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media (max-width: 767.98px) {
   .menu__body {
     position: fixed;
-    right: -200%;
+    right: -250%;
     top: 0;
     height: 100%;
     width: auto;
@@ -3499,7 +3499,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 /* Строки 1,4,7... */
 #table tbody tr:nth-child(3n+1) {
-	background: #faecff;
+	background: #ecfbff;
 }
 
 /* Строки 2,5,8... */
