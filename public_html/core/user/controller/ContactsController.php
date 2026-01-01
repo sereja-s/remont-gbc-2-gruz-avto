@@ -13,5 +13,15 @@ class ContactsController extends BaseUser
 	{
 
 		parent::inputData();
+
+		$contacts_page = $this->model->get('contacts_page', [
+			'order' => ['id'],
+			'limit' => 1
+		]);
+
+		$contacts_page && $contacts_page = $contacts_page[0];
+
+		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
+		return compact('contacts_page');
 	}
 }

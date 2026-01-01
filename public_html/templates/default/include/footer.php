@@ -41,6 +41,14 @@
 	</div>
 </footer>
 
+<script>
+	var ForJS = {};
+	/* укажем для описания полного пути к маркеру(картинки-лого) на карте */
+	/* Остальное описано в main.js  */
+
+	ForJS.imgMap = '<?= $this->img($this->set['main_img']) ?>';
+</script>
+
 <?php $this->getScripts() ?>
 
 </body>

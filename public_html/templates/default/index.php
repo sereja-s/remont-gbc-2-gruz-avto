@@ -1,48 +1,27 @@
 <section class="hero">
 	<div class="hero__container">
-		<h1 class="hero__title">Диагностика и ремонт головки блока цилиндров (ГБЦ) в Донецке ДНР</h1>
+		<h1 class="hero__title"><?= $index_page['name'] ?></h1>
 		<div class="hero__subtitle">
-			Профессиональный ремонт и восстановление ГБЦ ДВС. Высококачественные работы с использованием современного оборудования. Гарантия на все виды ремонта!
+			<?= $index_page['keywords'] ?>
 		</div>
 		<div class="hero__form">
 			<button style="font-size: 1.5rem;" type="submit" class="hero__button phone-mask-button">+7(949)334-91-01</button>
 			<button style="font-size: 1.45rem; background-color: #0416ca;" type="submit" class="hero__button phone-mask-button">Связаться в телеграм</button>
 		</div>
-	</div>
-	<div class="hero__bg">
-		<picture><img src="<?= PATH . TEMPLATE ?>assets/img/hero/гбц-2-мин.jpg" alt="Image"></picture>
-	</div>
-</section>
-<section class="benefits">
-	<div class="benefits__container">
-		<!-- <h2 class="benefits__title title">На базе нашего сервиса, мы выполняем ремонт и восстановление головок блока цилиндров</h2> -->
-		<div class="benefits__body">
-			<article class="benefits__item benefits-item">
-				<h4 class="benefits-item__title">Ремонт и восстановление головок блока цилиндров (ГБЦ) Донецк ДНР</h4>
-				<div class="benefits-item__text">
-					<p>На базе нашего сервиса, мы выполняем ремонт и восстановление головок блоков цилиндров любой сложности на профессиональном и современном оборудовании</p>
-				</div>
-				<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Получить консультацию</span></button>
-
-			</article>
-			<article class="benefits__item benefits-item">
-				<h4 class="benefits-item__title">Комплексный ремонт и обслуживание грузовых автомобилей, прицепов и полуприцепов Донецк ДНР</h4>
-				<div class="benefits-item__text">
-					<p>Наша мастерская выполняет комплексный ремонт и обслуживание грузовых автомобилей, прицепов и полуприцепов в г. Донецке. Мы обслуживаем технику европейских производителей таких как: DAF, Renault, VOLVO, Schmitz, KRone</p>
-				</div>
-
-				<a href="<?= $this->alias('remontgruzauto') ?>" class="benefits-item__button button button--shadow"><span style="top: 12px;">Наши услуги</span></a>
-
-
-
-			</article>
+		<div style="padding-top: 20px;" class="hero__form">
+			<a style="font-size: 1.45rem; background-color: #f32f18; display: flex; align-items: center;     justify-content: center;" href="<?= $this->alias('contacts') ?>" class="hero__button">Все контакты</a>
 		</div>
 	</div>
+	<div class="hero__bg">
+		<picture><img src="<?= $this->img($index_page['img']) ?>" alt="<?= $index_page['title'] ?>"></picture>
+	</div>
 </section>
+
+<?= $this->servisitem ?>
 
 <section class="category">
 	<div class="category__container">
-		<h2 class="category__title title">Восстановление и ремонт головок блока цилиндров любой сложности на профессиональном и современном оборудованиии.</h2>
+		<h2 class="category__title title"><?= $index_page['description'] ?></h2>
 		<div class="category__subtitle">Все производимые работы согласуются с заказчиком.</div>
 
 		<?= $this->pricetable ?>
@@ -120,7 +99,7 @@
 						</div>
 					</div>
 					<div class="gallery__content">
-						<h4 class="gallery__title">Ремонт и восстановление ГБЦ и грузовых авто европейских марок, прицепов, полуприцепов в Донецке</h4>
+						<h4 class="gallery__title"><?= $index_page['title'] ?></h4>
 						<div class="gallery__text">
 							<p>Высококачественные работы с использованием современного оборудования. Гарантия на все виды ремонта</p>
 						</div>

@@ -72,27 +72,31 @@ class Settings
 	private $messages = 'core/base/messages/';
 
 	// свойство с таблицей по умолчанию
-	private $defaultTable = 'sales';
+	private $defaultTable = 'price_table';
 
 	// свойство в котором хранится путь к шаблонам админки
 	private $formTemplates = PATH . 'core/admin/view/include/form_templates/';
 
 	// свойство с таблицами, названия которых будут показаны в боковом меню админки
 	private $projectTables = [
-		'sales' => ['name' => 'Акции'],
-		'price_table' => ['name' => 'Стоимость услуг'],
+		/* 'sales' => ['name' => 'Акции'], */
+		'price_table' => ['name' => 'Стоимость услуг (ГБЦ)'],
 		/* 'catalog' => ['name' => 'Каталог (меню)'], */
 		//'filters' => ['name' => 'Фильтры'],
-		'goods' => ['name' => 'Процессы'],
-		'results_foto' => ['name' => 'Фотографии работ'],
-		'phones' => ['name' => 'Телефоны'],
-		'emails' => ['name' => 'Эл. почты'],
-		'address' => ['name' => 'Адреса'],
-		//'news' => ['name' => 'Новости'],
-		'information' => ['name' => 'Информация (меню)'],
+		'goods' => ['name' => 'Процессы (ГБЦ)'],
+		'results_foto' => ['name' => 'Фотографии'],
+		/* 'phones' => ['name' => 'Телефоны'], */
+		/* 'emails' => ['name' => 'Эл. почты'], */
+		/* 'address' => ['name' => 'Адреса'], */
+		//'news' => ['name' => 'Новости'],		
 		'settings' => ['name' => 'Настройки (о сайте)'],
-		'advantages' => ['name' => 'Преимущества'],
+		'index_page' => ['name' => 'Страница ГБЦ'],
+		'autoservis_page' => ['name' => 'Страница Автосервис'],
+		'questions' => ['name' => 'Услуги автосервиса'],
+		'contacts_page' => ['name' => 'Страница Контакты'],
+		/* 'advantages' => ['name' => 'Преимущества'], */
 		'socials' => ['name' => 'Соц.сети'],
+		'information' => ['name' => 'Информация (меню)'],
 		//'payments' => ['name' => 'Оплата'],
 		//'delivery' => ['name' => 'Доставка'],
 		//'users' => ['name' => 'Пользователи'],
@@ -106,7 +110,7 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'email', 'title', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
+		'text' => ['name', 'phone', 'email', 'title', 'alias', 'external_alias', 'sub_title', 'data_coordinates', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
 		'textarea' => ['content', 'keywords', 'address', 'working_time', 'description', 'short_content'],
 		'radio' => ['visible', 'show_top_menu', 'hit', 'new'/*'sale', 'hot'*/],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
@@ -133,7 +137,7 @@ class Settings
 		'alias' => ['Ссылка ЧПУ'],
 		'external_alias' => ['Внешняя ссылка'],
 		'img' => ['Изображение', '(Одно)'],
-		'main_img' => ['Картинка', '(для ссылки на сайт)'],
+		'main_img' => ['Картинка', '(для карты)'],
 		'gallery_img' => ['галерея изображений', '(Несколько)'],
 		'visible' => ['Видимость', '(Показывать?)'],
 		'menu_position' => ['Позиция в списке', '(Расположение в меню)'],
@@ -142,7 +146,7 @@ class Settings
 		'short_content' => ['Краткое описание'],
 		'img_years' => ['Изображение количества лет на рынке'],
 		'number' => ['Порядковый номер'],
-		'number_of_years' => ['год'],
+		'data_coordinates' => ['Координаты на карте'],
 		'hit' => ['Хит продаж'],
 		'sale' => ['Акция'],
 		'new' => ['Новинка'],

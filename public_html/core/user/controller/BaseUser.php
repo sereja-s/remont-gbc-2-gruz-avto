@@ -57,6 +57,8 @@ abstract class BaseUser extends \core\base\controller\BaseController
 	protected $priceTable;
 	protected $pricetable;
 
+	protected $servisitem;
+
 
 	protected function inputData()
 	{
@@ -135,6 +137,7 @@ abstract class BaseUser extends \core\base\controller\BaseController
 		// +Выпуск №129 (добавили в шаблон путь к файлу с хлебными крошками)
 		$this->breadcrumbs = $this->render(TEMPLATE . 'include/breadcrumbs');
 		$this->pricetable = $this->render(TEMPLATE . 'include/pricetable');
+		$this->servisitem = $this->render(TEMPLATE . 'include/servisitem');
 
 		if (!$this->content) {
 

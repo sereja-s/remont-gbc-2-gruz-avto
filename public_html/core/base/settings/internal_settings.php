@@ -100,6 +100,7 @@ const USER_CSS_JS = [
 		/* 'https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"', */
 		/* 'assets/js/vendors.min.js', */
 		'assets/js/app.js',
+		'assets/js/new.js',
 		/* 'assets/js/script.js', */
 	]
 ];

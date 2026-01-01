@@ -13,5 +13,20 @@ class RemontGruzAutoController extends BaseUser
 	{
 		// Выпуск №120
 		parent::inputData();
+
+		$autoservis_page = $this->model->get('autoservis_page', [
+			'order' => ['id'],
+			'limit' => 1
+		]);
+
+		$autoservis_page && $autoservis_page = $autoservis_page[0];
+
+		$questions = $this->model->get('questions', [
+			'where' => ['visible' => 1],
+			'order' => ['menu_position']
+		]);
+
+		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
+		return compact('autoservis_page', 'questions');
 	}
 }
