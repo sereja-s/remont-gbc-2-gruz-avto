@@ -16,11 +16,9 @@
 			</div>
 			<div class="footer__info footer-info">
 				<div class="footer-info__logo">
-					<picture>
-						<img src="<?= PATH . TEMPLATE ?>assets/img/Лого- траксервис-тёмный-с фоном -мин.jpg" alt="Logo">
-					</picture>
+					<img src="<?= $this->img($this->set['main_img']) ?>" alt="<?= $this->set['sub_title'] ?>">
 				</div>
-				<div class="footer-info__text">Ремонт грузовых авто, прицепов, полуприцепов, ремонт ГБЦ в Донецке ДНР</div>
+				<div class="footer-info__text"><?= $this->set['sub_title'] ?></div>
 			</div>
 
 			<div class="footer__address footer-address">

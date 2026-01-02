@@ -22,7 +22,7 @@
 <section class="category">
 	<div class="category__container">
 		<h2 class="category__title title"><?= $index_page['description'] ?></h2>
-		<div class="category__subtitle">Все производимые работы согласуются с заказчиком.</div>
+		<div class="category__subtitle"><?= $index_page['sub_title'] ?></div>
 
 		<?= $this->pricetable ?>
 

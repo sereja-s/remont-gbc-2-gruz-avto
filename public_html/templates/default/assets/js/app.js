@@ -360,7 +360,7 @@
             this.options.init ? this.initPopups() : null;
         }
         initPopups() {
-            this.popupLogging(`Прокинувся`);
+            this.popupLogging(`работает`);
             this.eventsPopup();
         }
         eventsPopup() {
@@ -376,7 +376,7 @@
                         this._selectorOpen = true;
                         this.open();
                         return;
-                    } else this.popupLogging(`Йой, не заповнено атрибут у ${buttonOpen.classList}`);
+                    } else this.popupLogging(`Не заполнен атрибут у ${buttonOpen.classList}`);
                     return;
                 }
                 const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
@@ -461,8 +461,8 @@
                             popup: this
                         }
                     }));
-                    this.popupLogging(`Відкрив попап`);
-                } else this.popupLogging(`Йой, такого попапу немає. Перевірте коректність введення. `);
+                    this.popupLogging(`Попап открыт`);
+                } else this.popupLogging(` Попап не открылся `);
             }
         }
         close(selectorValue) {
@@ -496,7 +496,7 @@
             setTimeout((() => {
                 this._focusTrap();
             }), 50);
-            this.popupLogging(`Закрив попап`);
+            this.popupLogging(`Попап закрыт`);
         }
         _getHash() {
             if (this.options.hashSettings.location) this.hash = this.targetOpen.selector.includes("#") ? this.targetOpen.selector : this.targetOpen.selector.replace(".", "#");
@@ -531,7 +531,7 @@
             if (!this.isOpen && this.lastFocusEl) this.lastFocusEl.focus(); else focusable[0].focus();
         }
         popupLogging(message) {
-            this.options.logging ? FLS(`[Попапос]: ${message}`) : null;
+            this.options.logging ? FLS(`[Всё]: ${message}`) : null;
         }
     }
     modules_flsModules.popup = new Popup({});
@@ -570,8 +570,8 @@
                     behavior: "smooth"
                 });
             }
-            FLS(`[gotoBlock]: Юхуу...їдемо до ${targetBlock}`);
-        } else FLS(`[gotoBlock]: Йой... Такого блоку немає на сторінці: ${targetBlock}`);
+            FLS(`[gotoBlock]: Переходим к ${targetBlock}`);
+        } else FLS(`[gotoBlock]: Ткаого блока нет: ${targetBlock}`);
     };
     (function(global, factory) {
         typeof exports === "object" && typeof module !== "undefined" ? factory(exports) : typeof define === "function" && define.amd ? define([ "exports" ], factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, 
@@ -3259,10 +3259,10 @@
                 }
             }), 0);
             formValidate.formClean(form);
-            formLogging(`Форму відправлено!`);
+            formLogging(`Форму отправлено!`);
         }
         function formLogging(message) {
-            FLS(`[Форми]: ${message}`);
+            FLS(`[Формы]: ${message}`);
         }
     }
     function formRating() {
