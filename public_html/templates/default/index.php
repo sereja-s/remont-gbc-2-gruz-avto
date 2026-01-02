@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	<div class="hero__bg">
-		<picture><img src="<?= $this->img($index_page['img']) ?>" alt="<?= $index_page['title'] ?>"></picture>
+		<img src="<?= $this->img($index_page['img']) ?>" alt="<?= $index_page['title'] ?>">
 	</div>
 </section>
 

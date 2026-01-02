@@ -1,26 +1,22 @@
-<div class="_container">
+<?php if (!empty($data)) : ?>
 
-	<?php if (!empty($this->menu['information-bottom'])) : ?>
+	<section class="hero">
+		<div class="hero__container">
+			<h1 class="hero__title"><?= $data['name'] ?></h1>
+		</div>
+		<div class="hero__bg">
+			<img src="<?= $this->img($data['img']) ?>" alt="<?= $data['name'] ?>">
+		</div>
+	</section>
+	<section class="category">
+		<div class="category__container">
+			<h2 class="category__title title"><?= $data['name'] ?></h2>
+			<div class="category__subtitle">
+				<?= $data['content'] ?>
+			</div>
+		</div>
+	</section>
 
-		<?php foreach ($this->menu['information-bottom'] as $item) : ?>
+	<?= $this->servisitem ?>
 
-			<?php if ($item['alias'] === ($this->parameters['alias'])) : ?>
-
-				<h1 style="margin-top: 100px;" class="products__title _title"><?= $item['name'] ?></h1>
-
-				<section style="margin-bottom: 35px;" class="catalog-internal">
-
-					<?= $item['content'] ?>
-
-				</section>
-
-				<div class="furniture__label">Стоимость предоставляемых услуг</div>
-
-				<?= $this->pricetable ?>
-
-			<?php endif; ?>
-
-		<?php endforeach; ?>
-
-	<?php endif; ?>
-</div>
+<?php endif; ?>

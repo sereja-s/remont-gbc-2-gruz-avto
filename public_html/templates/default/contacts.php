@@ -3,7 +3,7 @@
 		<h1 class="hero__title">Контакты</h1>
 	</div>
 	<div class="hero__bg">
-		<picture><img src="<?= $this->img($contacts_page['img']) ?>" alt="<?= $contacts_page['name'] ?>"></picture>
+		<img src="<?= $this->img($contacts_page['img']) ?>" alt="<?= $contacts_page['name'] ?>">
 	</div>
 </section>
 

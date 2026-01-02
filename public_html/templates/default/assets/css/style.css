@@ -491,8 +491,8 @@ body::after {
 
 .spollers__body {
   padding: 0 0 20px;
-  font-size: 18px;
-  line-height: 155%;
+  font-size: 20px;
+  line-height: 125%;
   font-weight: 300;
 }
 
@@ -706,7 +706,7 @@ body::after {
 
 .footer {
   background-color: #f0f0f0;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .footer__container {
@@ -735,10 +735,11 @@ body::after {
   -ms-grid-column-align: center;
       justify-self: center;
   color: #757575;
-  font-size: 17px;
-  line-height: 152.941176%;
+  font-size: 18px;
+  line-height: 115%;
+  padding-top: 2rem;
   /* 26/17 */
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .footer-info {
@@ -904,8 +905,11 @@ body::after {
   
 }
 
-.hero__form .form__error {
-  display: none;
+.hero__button{
+  display: inline-block; transition: transform 0.5s ease;
+}
+.hero__button:hover{
+  transform: scale(0.9);
 }
 
 .hero__input {
