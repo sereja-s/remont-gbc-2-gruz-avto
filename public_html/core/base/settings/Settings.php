@@ -110,7 +110,7 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'email', 'title', 'alias', 'external_alias', 'data_coordinates', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
+		'text' => ['name', 'phone', 'phone_aser', 'phone_azap', 'telegram', 'telegram_aser', 'telegram_azap', 'email', 'title', 'alias', 'external_alias', 'data_coordinates', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
 		'textarea' => ['content', 'keywords', 'address', 'working_time', 'description', 'short_content', 'sub_title'],
 		'radio' => ['visible', 'show_top_menu', 'hit', 'new'/*'sale', 'hot'*/],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
@@ -128,9 +128,14 @@ class Settings
 		// каждое поле тоже представляет собой массив, в котором можно указать два элемента (название элемента, комментарий элемента)
 		'name' => ['Название'],
 		'keywords' => ['Ключевые слова'],
-		'content' => ['Описание', '(Текстовая часть, фотографии, картинки к описанию)'],
+		'content' => ['Описание', '(Текстовая часть)'],
 		'description' => ['SEO описание'],
-		'phone' => ['Телефон'],
+		'phone' => ['Телефон (ГБЦ)'],
+		'phone_aser' => ['Телефон (Автосервис)'],
+		'phone_azap' => ['Телефон (Запчасти)'],
+		'telegram' => ['Телеграм (ГБЦ)'],
+		'telegram_aser' => ['Телеграм (Автосервис)'],
+		'telegram_azap' => ['Телеграм (Запчасти)'],
 		'email' => ['Электронная почта'],
 		'address' => ['Адрес'],
 		'working_time' => ['График работы'],

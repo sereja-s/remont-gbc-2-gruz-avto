@@ -5,11 +5,11 @@
 			<?= $autoservis_page['keywords'] ?>
 		</div>
 		<div class="hero__form">
-			<button style="font-size: 1.5rem;" type="submit" class="hero__button phone-mask-button">+7(949)327-32-02</button>
-			<button style="font-size: 1.45rem; background-color: #0416ca;" type="submit" class="hero__button phone-mask-button">Связаться в телеграм</button>
+			<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone_aser']) ?>" class="hero__button top-button"><?= $this->set['phone_aser'] ?></a>
+			<a href="<?= $this->set['telegram_aser'] ?>" style="background-color: #0416ca;" class="hero__button top-button">Связаться в телеграм</a>
 		</div>
 		<div style="padding-top: 20px;" class="hero__form">
-			<a style="font-size: 1.45rem; background-color: #f32f18; display: flex; align-items: center;     justify-content: center;" href="<?= $this->alias('contacts') ?>" class="hero__button">Все контакты</a>
+			<a href="<?= $this->alias('contacts') ?>" style="background-color: #f32f18;" class="hero__button top-button">Все контакты</a>
 		</div>
 	</div>
 	<div class="hero__bg">

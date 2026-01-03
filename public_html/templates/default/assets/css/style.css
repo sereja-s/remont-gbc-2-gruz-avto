@@ -526,7 +526,7 @@ body::after {
 .button {
   position: relative;
   min-height: 60px;
-  padding: 0 60px;
+  padding: 0 30px;
   border-radius: 30px;
   color: #000;
   background-color: #ffcc00;
@@ -3841,3 +3841,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 /* section-contacts end */
+
+.top-button {
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.gal-button {
+	font-size: 1.35rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.benefits__item a span {
+	top: 15px;
+}
+.category__button span {
+	top: 15px;
+}
+.gallery__but span {
+	top: 15px;
+}

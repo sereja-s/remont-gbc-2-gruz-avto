@@ -5,12 +5,15 @@
 			<?= $index_page['keywords'] ?>
 		</div>
 		<div class="hero__form">
-			<button style="font-size: 1.5rem;" type="submit" class="hero__button phone-mask-button">+7(949)334-91-01</button>
-			<button style="font-size: 1.45rem; background-color: #0416ca;" type="submit" class="hero__button phone-mask-button">Связаться в телеграм</button>
+			<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" class="hero__button top-button"><?= $this->set['phone'] ?></a>
+			<a href="<?= $this->set['telegram'] ?>" style="background-color: #0416ca;" class="hero__button top-button">Связаться в телеграм</a>
 		</div>
 		<div style="padding-top: 20px;" class="hero__form">
-			<a style="font-size: 1.45rem; background-color: #f32f18; display: flex; align-items: center;     justify-content: center;" href="<?= $this->alias('contacts') ?>" class="hero__button">Все контакты</a>
+			<a href="<?= $this->alias('contacts') ?>" style="background-color: #f32f18;" class="hero__button top-button">Все контакты</a>
 		</div>
+		<style>
+
+		</style>
 	</div>
 	<div class="hero__bg">
 		<img src="<?= $this->img($index_page['img']) ?>" alt="<?= $index_page['title'] ?>">
@@ -47,9 +50,8 @@
 
 			<div class="category__bottom">
 				<div class="category__label">Не нашли своей позиции? Свяжитесь с нами и мы уточним, что можем для вас сделать</div>
-				<button data-popup=".popup-call" class="category__button button button--shadow"><span>Связаться с
-						нами</span></button>
-				<a href="#" class="category__link">Написать в Телеграм</a>
+				<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" class="category__button button button--shadow"><span>Связаться с нами</span></a>
+				<a href="<?= $this->set['telegram'] ?>" class="category__link">Написать в Телеграм</a>
 			</div>
 		</div>
 	</section>
@@ -103,7 +105,7 @@
 						<div class="gallery__text">
 							<p>Высококачественные работы с использованием современного оборудования. Гарантия на все виды ремонта</p>
 						</div>
-						<button data-popup=".popup-call" class="gallery__button button">Получить консультацию</button>
+						<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" class="gallery__button button gal-button"><span>Получить консультацию</span></a>
 					</div>
 				</article>
 			</div>

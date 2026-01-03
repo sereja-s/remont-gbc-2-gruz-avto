@@ -30,7 +30,7 @@
 				</div>
 				<div class="contacts__item">
 					<h3 class="category__title title" style="padding-bottom: 0.7rem;">График работы</h3>
-					<div class="category__subtitle"><?= $this->set['work_time'] ?></div>
+					<div class="category__subtitle"><?= $this->set['working_time'] ?></div>
 				</div>
 				<div class="contacts__item">
 					<h3 class="category__title title" style="padding-bottom: 0.7rem;">Телефоны</h3>
@@ -38,10 +38,10 @@
 						<a class="contacts__phone" href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>"><?= $this->set['phone'] ?> - ГБЦ</a>
 					</div>
 					<div class="category__subtitle">
-						<a class="contacts__phone" href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>"><?= $this->set['phone'] ?> - Автосервис</a>
+						<a class="contacts__phone" href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone_aser']) ?>"><?= $this->set['phone_aser'] ?> - Автосервис</a>
 					</div>
 					<div class="category__subtitle">
-						<a class="contacts__phone" href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>"><?= $this->set['phone'] ?> - Запчасти</a>
+						<a class="contacts__phone" href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone_azap']) ?>"><?= $this->set['phone_azap'] ?> - Запчасти</a>
 					</div>
 				</div>
 			</div>

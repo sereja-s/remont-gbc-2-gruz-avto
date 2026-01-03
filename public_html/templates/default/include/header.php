@@ -54,25 +54,14 @@
 								<li class="menu__item"><a href="<?= $this->alias('contacts') ?>" class="menu__link">Контакты</a></li>
 							</ul>
 							<div class="menu__actions menu-actions">
-								<a href="tel:88007777550" class="menu-actions__item menu-actions__phone">
+								<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone_aser']) ?>" class="menu-actions__item menu-actions__phone">
 									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/phone.svg" alt="Phone"></div>
-									<div class="menu-actions__text">+7(949)327-32-02 - Автосервис</div>
+									<div class="menu-actions__text"><?= $this->set['phone_aser'] ?> - Автосервис</div>
 								</a>
-								<a href="tel:88007777550" class="menu-actions__item menu-actions__phone">
+								<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" class="menu-actions__item menu-actions__phone">
 									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/phone.svg" alt="Phone"></div>
-									<div class="menu-actions__text">+7(949)334-91-01 - ГБЦ</div>
+									<div class="menu-actions__text"><?= $this->set['phone'] ?> - ГБЦ</div>
 								</a>
-								<!-- <a href="mailto:mail@agifta.ru" class="meu-actions__item menu-actions__email">
-									<div class="menu-actions__icon"><img src="<?= PATH . TEMPLATE ?>assets/img/icons/mail.svg" alt="Email"></div>
-									<div class="menu-actions__text">Ignatenko_k_a@mail.ru</div>
-								</a> -->
-								<?php if (!empty($this->socials)) : ?>
-									<?php foreach ($this->socials as $item) : ?>
-										<a href="<?= $this->alias($item['external_alias']) ?>" class="menu-actions__item menu-actions__telegram">
-											<div class="menu-actions__icon"><img src="<?= $this->img($item['img']) ?>" alt="<?= $item['name'] ?>"></div>
-										</a>
-									<?php endforeach; ?>
-								<?php endif; ?>
 							</div>
 						</nav>
 					</div>

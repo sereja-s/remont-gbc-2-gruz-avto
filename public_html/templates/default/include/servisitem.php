@@ -2,24 +2,23 @@
 
 		<section class="benefits">
 			<div class="benefits__container">
-				<!-- <h2 class="benefits__title title">На базе нашего сервиса, мы выполняем ремонт и восстановление головок блока цилиндров</h2> -->
 				<div class="benefits__body">
 					<article class="benefits__item benefits-item">
 						<h4 class="benefits-item__title"><?= $this->set['name'] ?></h4>
 						<div class="benefits-item__text">
 							<p><?= $this->set['keywords'] ?></p>
 						</div>
-						<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Получить консультацию</span></button>
-
+						<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" class="benefits-item__button button button--shadow"><span>Получить консультацию</span></a>
 					</article>
 					<article class="benefits__item benefits-item">
 						<h4 class="benefits-item__title"><?= $this->set['short_content'] ?></h4>
 						<div class="benefits-item__text">
 							<p><?= $this->set['description'] ?></p>
 						</div>
-
-						<a href="<?= $this->alias('remontgruzauto') ?>" class="benefits-item__button button button--shadow"><span style="top: 15px;">Наши услуги</span></a>
+						<a href="<?= $this->alias('remontgruzauto') ?>" class="benefits-item__button button button--shadow"><span>Наши услуги</span></a>
 					</article>
+					<style>
+					</style>
 				</div>
 			</div>
 		</section>
@@ -28,21 +27,20 @@
 
 		<section class="benefits">
 			<div class="benefits__container">
-				<!-- <h2 class="benefits__title title">На базе нашего сервиса, мы выполняем ремонт и восстановление головок блока цилиндров</h2> -->
 				<div class="benefits__body">
 					<article class="benefits__item benefits-item">
 						<h4 class="benefits-item__title"><?= $this->set['short_content'] ?></h4>
 						<div class="benefits-item__text">
 							<p><?= $this->set['description'] ?></p>
 						</div>
-						<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Получить консультацию</span></button>
+						<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone_aser']) ?>" class="benefits-item__button button button--shadow"><span>Получить консультацию</span></a>
 					</article>
 					<article class="benefits__item benefits-item">
 						<h4 class="benefits-item__title"><?= $this->set['name'] ?></h4>
 						<div class="benefits-item__text">
 							<p><?= $this->set['keywords'] ?></p>
 						</div>
-						<a href="<?= $this->alias() ?>" class="benefits-item__button button button--shadow"><span style="top: 15px;">Наши услуги</span></a>
+						<a href="<?= $this->alias() ?>" class="benefits-item__button button button--shadow"><span>Наши услуги</span></a>
 					</article>
 				</div>
 			</div>
@@ -52,7 +50,6 @@
 
 		<section class="benefits">
 			<div class="benefits__container">
-				<!-- <h2 class="benefits__title title">На базе нашего сервиса, мы выполняем ремонт и восстановление головок блока цилиндров</h2> -->
 				<div class="benefits__body">
 					<article class="benefits__item benefits-item">
 						<h4 class="benefits-item__title"><?= $this->set['name'] ?></h4>
@@ -60,7 +57,6 @@
 							<p><?= $this->set['keywords'] ?></p>
 						</div>
 						<a href="<?= $this->alias() ?>" class="benefits-item__button button button--shadow"><span style="top: 15px;">Наши услуги</span></a>
-
 					</article>
 					<article class="benefits__item benefits-item">
 						<h4 class="benefits-item__title"><?= $this->set['short_content'] ?></h4>
@@ -68,7 +64,6 @@
 							<p><?= $this->set['description'] ?></p>
 						</div>
 						<a href="<?= $this->alias('remontgruzauto') ?>" class="benefits-item__button button button--shadow"><span style="top: 15px;">Наши услуги</span></a>
-
 					</article>
 				</div>
 			</div>
