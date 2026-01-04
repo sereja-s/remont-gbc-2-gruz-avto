@@ -11,6 +11,8 @@ const TEMPLATE = 'templates/default/';
 // константа для хранения пути к административной панели сайта
 const ADMIN_TEMPLATE = 'core/admin/view/';
 
+const BASE_EXCEPTIONS_TEMPLATE = 'core/base/exceptions/errorView/';
+
 // константа, указывающая директорию где у нас будут храниться загружаемые файлы
 const UPLOAD_DIR = 'userfiles/';
 
@@ -115,7 +117,7 @@ function autoloadMainClasses($class_name)
 
 	// условие: если не подключается данный файл
 	// (знак @ блокирует вывод ошибок, которые генерирует функция, когда пытается подключить файл и его подключить не может)
-	if (!include_once ($class_name) . '.php') {
+	if (!@include_once ($class_name) . '.php') {
 
 		// небходимо выбросить исключение с указанным текстом сообщения
 		// (конструкция throw ищет ближайший catch класса RouteException (здесь это в файле catch))

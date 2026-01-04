@@ -31,9 +31,9 @@ try {
 	// тогда выполнится код внутри блока catch
 	// метод getMessage() находится в родительском классе Exception и получает сообзение об ошибке,
 	// которое было выброшено через throw (здесь- в файле internal_settings.php)
-	exit($e->getMessage());
+	exit($e->showMessage());
 	// перехватываем исключение класса DbException
 } catch (DbException $e) {
 
-	exit($e->getMessage());
+	exit($e->showMessage());
 }
