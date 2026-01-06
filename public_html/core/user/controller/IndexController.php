@@ -21,18 +21,6 @@ class IndexController extends BaseUser
 
 		$index_page && $index_page = $index_page[0];
 
-		// Выпуск №124- Пользовательская часть | вывод акций (слайдер под верхним меню)
-		/* $sales = $this->model->get('sales', [
-			'where' => ['visible' => 1],
-			'order' => ['menu_position']
-		]); */
-
-		// Выпуск №128 - массив преимуществ
-		/* $advantages = $this->model->get('advantages', [
-			'where' => ['visible' => 1],
-			'order' => ['menu_position'],
-		]);
- */
 		// процессы
 		$goods = $this->model->get('goods', [
 			'where' => ['visible' => 1],
@@ -45,7 +33,12 @@ class IndexController extends BaseUser
 			'limit' => 20
 		]);
 
+		$data = [];
+
+		$data['name'] = $index_page['name'];
+		$data['title'] = $index_page['title'];
+
 		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
-		return compact('index_page', 'goods', 'resultsFoto');
+		return compact('index_page', 'goods', 'resultsFoto', 'data');
 	}
 }

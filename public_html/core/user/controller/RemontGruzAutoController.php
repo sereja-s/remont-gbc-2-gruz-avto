@@ -6,7 +6,7 @@ use core\admin\model\Model;
 use core\base\controller\BaseController;
 
 
-class RemontGruzAutoController extends BaseUser
+class RemontgruzautoController extends BaseUser
 {
 
 	protected function inputData()
@@ -26,7 +26,12 @@ class RemontGruzAutoController extends BaseUser
 			'order' => ['menu_position']
 		]);
 
+		$data = [];
+
+		$data['name'] = $autoservis_page['name'];
+		$data['title'] = $autoservis_page['title'];
+
 		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
-		return compact('autoservis_page', 'questions');
+		return compact('autoservis_page', 'questions', 'data');
 	}
 }

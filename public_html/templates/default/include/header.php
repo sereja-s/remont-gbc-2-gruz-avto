@@ -6,29 +6,22 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
-	<link rel="shortcut icon" href="favicon.ico">
+
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description" content="<?= $this->set['description'] ?> <?= $this->set['phone'] ?> <?= $this->set['address'] ?>">
-	<meta name="keywords" content="<?= $this->set['keywords'] ?>">
+	<meta name="description" content="<?= $data['name'] ? $data['name'] : $this->set['title'] ?><?= ', ' . $this->set['phone'] . ' ГБЦ, ' . $this->set['phone_aser'] . ' Автосервис, ' . $this->set['phone_azap'] . ' Запчасти' ?>">
 
-	<meta property="og:title" content="<?= $this->set['title'] ?>" />
-	<meta property="og:description" content="<?= $this->set['description'] ?> <?= $this->set['phone'] ?> <?= $this->set['address'] ?>" />
-	<meta property="og:image" content="<?= $this->img($this->set['main_img']) ?>" />
+	<meta name="keywords" content="<?= $this->set['meta_keywords'] ?>">
 
-
+	<meta property="og:title" content="<?= $this->set['c_name'] ?>">
+	<meta property="og:description" content="<?= $data['name'] ? $data['name'] : $this->set['sub_title'] ?><?= ', ' . $this->set['phone'] . ' ГБЦ, ' . $this->set['phone_aser'] . ' Автосервис, ' . $this->set['phone_azap'] . ' Запчасти' ?>">
+	<meta property="og:image" content="/userfiles/default_images/default.png">
 
 	<link rel="icon" href="<?= SITE_URL ?>/favicon.ico" type="image/x-icon">
 
-	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-	<link rel="shortcut icon" href="/favicon/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-	<link rel="manifest" href="/favicon/site.webmanifest" />
-
-	<title><?= $this->set['title'] ?></title>
+	<title><?= $this->set['c_name'] ?><?= $data['title'] ? ' | ' . $data['title'] : ' | ' . $this->set['sub_title'] ?></title>
 
 	<?php $this->getStyles() ?>
 </head>

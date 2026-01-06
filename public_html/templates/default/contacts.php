@@ -1,6 +1,6 @@
 <section class="hero">
 	<div class="hero__container">
-		<h1 class="hero__title">Контакты</h1>
+		<h1 class="hero__title"><?= $contacts_page['name'] ?></h1>
 	</div>
 	<div class="hero__bg">
 		<img src="<?= $this->img($contacts_page['img']) ?>" alt="<?= $contacts_page['name'] ?>">

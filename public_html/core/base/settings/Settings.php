@@ -110,7 +110,7 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'phone_aser', 'phone_azap', 'telegram', 'telegram_aser', 'telegram_azap', 'email', 'title', 'alias', 'external_alias', 'data_coordinates', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
+		'text' => ['name', 'phone', 'phone_aser', 'phone_azap', 'telegram', 'telegram_aser', 'telegram_azap', 'email', 'title', 'alias', 'external_alias', 'data_coordinates', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password', 'c_name', 'meta_keywords'],
 		'textarea' => ['content', 'keywords', 'address', 'working_time', 'description', 'short_content', 'sub_title'],
 		'radio' => ['visible', 'show_top_menu', 'hit', 'new'/*'sale', 'hot'*/],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 

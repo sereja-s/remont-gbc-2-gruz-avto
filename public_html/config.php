@@ -2,7 +2,7 @@
 
 defined('VG_ACCESS') or die('Access denied');
 
-const SITE_URL = 'http://cms-remont-gbz-2';
+const SITE_URL = 'https://trucks-service-dnr.ru';
 const PATH = '/';
 
 const HOST = 'localhost';

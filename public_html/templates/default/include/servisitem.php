@@ -23,7 +23,7 @@
 			</div>
 		</section>
 
-	<?php elseif ($this->getController() === 'remont_gruz_auto') : ?>
+	<?php elseif ($this->getController() === 'remontgruzauto') : ?>
 
 		<section class="benefits">
 			<div class="benefits__container">
