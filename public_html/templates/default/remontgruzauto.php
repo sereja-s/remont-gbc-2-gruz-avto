@@ -19,11 +19,20 @@
 
 <?= $this->servisitem ?>
 
+<section class="category">
+	<div class="category__container">
+		<h2 class="category__title title"><?= $autoservis_page['short_content'] ?></h2>
+		<div class="category__subtitle">
+			<?= $autoservis_page['content'] ?>
+		</div>
+	</div>
+</section>
+
 <?php if (!empty($questions)) : ?>
 
 	<section class="question">
 		<div class="question__container">
-			<h2 class="question__title title">Услуги, производимые нашей командой</h2>
+			<h3 class="question__title title">Услуги, производимые нашей командой</h3>
 			<div data-spollers class="question__spollers spollers">
 
 				<?php foreach ($questions as $item) : ?>
@@ -42,12 +51,3 @@
 	</section>
 
 <?php endif; ?>
-
-<section class="category">
-	<div class="category__container">
-		<h2 class="category__title title"><?= $autoservis_page['short_content'] ?></h2>
-		<div class="category__subtitle">
-			<?= $autoservis_page['content'] ?>
-		</div>
-	</div>
-</section>

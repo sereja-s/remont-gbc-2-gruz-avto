@@ -17,8 +17,6 @@
 						</div>
 						<a href="<?= $this->alias('remontgruzauto') ?>" class="benefits-item__button button button--shadow"><span>Наши услуги</span></a>
 					</article>
-					<style>
-					</style>
 				</div>
 			</div>
 		</section>

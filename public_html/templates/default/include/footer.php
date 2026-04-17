@@ -16,7 +16,6 @@
 				</div>
 				<div class="footer-info__text"><?= $this->set['sub_title'] ?></div>
 			</div>
-
 			<div class="footer__address footer-address">
 				<div class="footer-address__icon">
 					<picture>
@@ -25,7 +24,6 @@
 				</div>
 				<div class="footer-address__text">ДНР, г. Донецк, ул. Чемпионная, 80 (АТП 0513)</div>
 			</div>
-
 		</div>
 
 		<?php if (!empty($this->menu['information-bottom'])) : ?>
@@ -34,9 +32,7 @@
 			<ul>
 				<?php foreach ($this->menu['information-bottom'] as $item) : ?>
 					<li style="display: flex;">
-						<a style="margin-bottom: 1rem;" class="category__subtitle" href="<?= $this->alias(['information' => $item['alias']]) ?>">
-							<?= $item['name'] ?>
-						</a>
+						<a style="margin-bottom: 1rem;" class="category__subtitle" href="<?= $this->alias(['information' => $item['alias']]) ?>"><?= $item['name'] ?></a>
 					</li>
 				<?php endforeach; ?>
 			</ul>
@@ -49,14 +45,13 @@
 	</div>
 </footer>
 
+</div>
 <script>
 	var ForJS = {};
 	/* укажем для описания полного пути к маркеру(картинки-лого) на карте */
 	/* Остальное описано в main.js  */
-
 	ForJS.imgMap = '<?= $this->img($this->set['main_img']) ?>';
 </script>
-
 <?php $this->getScripts() ?>
 
 </body>

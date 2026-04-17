@@ -11,9 +11,6 @@
 		<div style="padding-top: 20px;" class="hero__form">
 			<a href="<?= $this->alias('contacts') ?>" style="background-color: #f32f18;" class="hero__button top-button">Все контакты</a>
 		</div>
-		<style>
-
-		</style>
 	</div>
 	<div class="hero__bg">
 		<img src="<?= $this->img($index_page['img']) ?>" alt="<?= $index_page['title'] ?>">
